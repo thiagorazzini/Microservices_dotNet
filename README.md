@@ -18,3 +18,4 @@ Diferenças de protocolo entre elas:
 ![[Pasted image 20231105162852.png]]
 
 
+
