@@ -26,3 +26,15 @@ REST tem suas restrições, são elas:
 
 Vantagens de utilizar o REST
 ![[Pasted image 20231105170830.png]]
+
+
+<h4>Entendendo  Request e Response</h4>
+Para entender o request, vamos pegar o exemplo de um uso diário que é a utilização do Chrome, quando  executamos o uso para acessar um site, realizamos  o HTTP request  e o servidor vai até a base de dados, faz a ação de acordo com o verbo http que foi realizado o request e devolve utilizando utilizando o HTTP response.
+![[Pasted image 20231105171656.png]]
+
+
+Represetando uma request:
+![[Pasted image 20231105171823.png]]
+
+Representando o response:
+![[Pasted image 20231105171900.png]]
