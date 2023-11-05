@@ -10,5 +10,11 @@ Um carro corsa utiliza o filtro de ar do modelo A47b, então esse mesmo filtro p
 Imagine o desenvolvimento de uma aplicação webservice que faça a busca e validação do CPF, uma aplicação desktop pode usar essa aplicação para esse tipo de ação, da mesma forma que uma aplicação mobile pode fazer o mesmo. Tudo isso acontece utilizando o HTTP!
 
 
+<h4>SOAP x REST</h4>
+Diferenças de protocolo entre elas:
+ - SOAP utiliza o HTTP para fazer chamadas RPC trafegando XML
+ - REST utiliza o HTTP para fazer as chamadas e suporta diferentes formatos de arquivo
+
+![[Pasted image 20231105162852.png]]
 
 
