@@ -17,5 +17,12 @@ Diferenças de protocolo entre elas:
 
 ![[Pasted image 20231105162852.png]]
 
+<h4>O que é REST ?</h4>
+Estado representacional de transferência
 
+REST tem suas restrições, são elas:
 
+![[Pasted image 20231105170601.png]]
+
+Vantagens de utilizar o REST
+![[Pasted image 20231105170830.png]]
