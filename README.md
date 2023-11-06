@@ -1,5 +1,6 @@
 <h3>O que são werbservices ?</h3>
 
+
 Webservices são aplicações que compartilham informações entre outas e é hospedada em um servidor onde ela pode ser acessada através do protocolo HTTP. Os clientes que são mais comummente usados como meio de acesso com o protocolo HTTP são os browsers, mas também pode ser feita requisições através de um browser, de um client e até mesmo por linha de comando (powershell ou linux). 
 
 <h4>Simplificando a explicação</h4>
@@ -75,3 +76,39 @@ São usados para envio de informações completas, podendo ser enviado via JSON 
 Exemplo utilizando JSON:
 ![[Pasted image 20231106081226.png]]
 
+<h4>HTTP Status Code</h4>
+Aqui podemos encontrar o retorno da ação realizada, para verificar o que aconteceu depois da demanda ser executada:
+
+São 5 tipos de status code:
+![[Pasted image 20231106082038.png]]
+
+
+Status code 2xx Sucesso muito utilizados:
+![[Pasted image 20231106082147.png]]
+
+Status code 4xx Erro do client:
+![[Pasted image 20231106082403.png]]
+
+400: Retornado quando o client envia um request que não existe
+401: sem autorização
+403: Client não tem autorização para aquele endpoint 
+404: Retornado quando o endpoint não é encontado
+
+<strong>HTTP Status Codes em Serviços REST</strong>
+
+
+Destacando os mais vistos no dia a dia
+
+200 OK - Criação ou deleção executada com sucesso
+201 Created: Criação de uma fila, tópico ou qualquer coisa que será executada posteriormente para ser executada/consumida
+204 No content: Deleção de uma fila, tópico, sessão bem sucedida mas sem retorno de conteúdo
+
+400 Bad Reques: Client faz endereço errado, ou uma busca de Id que não existe mais ai retorna um bad request.
+401 Unauthorized: Cliente sem autorização para executar a requisição na operação em questão.
+403 Forbiden: Não tem permissão para executar a requisição em questão.
+404 Not Found: Não encontrado o item que foi buscado pois o objeto não existe
+405 Mathod Not Allowed - O usuário não tem permissão de acesso que foi submetido
+409 Conflict: Ja existe o objeto criado e voce esta tendando criar o mesmo objeto
+
+
+500 Internal Erro de Server: Ocorreu um erro de execução no servidor
