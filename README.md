@@ -15,7 +15,7 @@ Diferenças de protocolo entre elas:
  - SOAP utiliza o HTTP para fazer chamadas RPC trafegando XML
  - REST utiliza o HTTP para fazer as chamadas e suporta diferentes formatos de arquivo
 
-![[Pasted image 20231105162852.png]]
+![image](https://github.com/thiagorazzini/Microservices_dotNet/assets/30513646/9233702d-50a6-4140-ad47-545dcb765e2a)
 
 <h4>O que é REST ?</h4>
 Estado representacional de transferência
