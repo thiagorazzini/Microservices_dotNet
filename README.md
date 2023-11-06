@@ -112,3 +112,59 @@ Destacando os mais vistos no dia a dia
 
 
 500 Internal Erro de Server: Ocorreu um erro de execução no servidor
+
+<h4>Os verbos HTTP eo REST</h4>
+POST -> criação de objetos
+
+GET -> Buscar o Objeto
+
+PUT -> Atualizar o objeto
+
+DELETE -> Remover o recurso
+
+![[Pasted image 20231106083538.png]]
+
+
+<strong>GET</h4>
+
+Usado para recuperar um recurso, quando temos sucesso  recuperamos uma representação do objeto em formato XML ou JSON  + HTTP 200(OK). Quando da erro ele retorna 404(not found) ou 400(Bad Request).
+
+Suporte parâmetros via URL (PATH ou QUERY) ou via HEADER. Ele é o unico verbo que não aceita o parâmetros vida BODY.
+
+<strong>POST - CREATE</post>
+É o mais utilizado para criar novos recursos e inserir um novo item na base
+
+Na hora de sucesso devemos retornar o status code 200 ou 201
+
+Suporta parâmetros:
+- Via URL(PATH ou Query)
+- Via Header
+- Via Body
+Recomendação de uso é sempre passar parâmetros para o BODY na hora de utilizar o POST
+
+<strong>PUT - UPDATE</strong>
+
+É comumente usado para realizar atualizações, usando os parâmetros de body, inserimos no campo as informações coletadas substituindo as informações desejadas. Geralmente usamos o ID como chave primária a ser mantida e alteramos todo o resto.
+
+Um update bem sucedido retorna status code 200 ou 204 quando não é necessário retorna nenhum conteúdo no Body.
+
+É bom retornar as alterações no body, para melhor visualização do que foi alterado.
+
+Isso tudo depende da arquitetura definida.
+
+Suporta parâmetros:
+- Via URL(PATH ou Query)
+- Via Header
+- Via Body -> De preferência 
+
+<strong> Delete - Remove</strong>
+
+Como é sugestivo, ele serve para deletar um recurso, e em uma deleção bem sucedida deve ser retornada 200(ok) e um response do body (representação do item removido, que acaba consumindo mais banda) ou um response customizado.
+
+Recomendação melhor é retornar um 204 no content.
+
+Suporta parâmetros:
+- Via URL(PATH ou Query) -> De preferência passando para PATH
+- Via Header
+- Via Body 
+
