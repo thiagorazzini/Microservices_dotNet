@@ -38,3 +38,40 @@ Represetando uma request:
 
 Representando o response:
 ![[Pasted image 20231105171900.png]]
+
+<h4>Os tipos de parâmetros usados no REST</h4>
+
+<strong>Paths params:</strong>
+Parâmetros que são passados pela URL e que são obrigatórios, caso não exista esses parâmetros será lançado uma exceção ou fará um operação similar mas que utiliza o mesmo verbo.
+
+Exemplo
+
+![[Pasted image 20231106075939.png]]
+
+podemos entender nessa URL a existência de 3 parâmetros na busca de livros:
+1 - asc: Ordenação crescente do nome dos livros;
+2 - 10: 10 itens por página;
+3 - 1: Index da página acessada
+
+<strong>Query params:</strong>
+
+Parâmetros passados por URL  mas não obrigatórios, então iniciamos a URL como já conhecido e colocamos um ponto de interrogação,  após a interrogação inserimos os parâmetros desejado
+
+![[Pasted image 20231106080349.png]]
+
+Entendendo os parâmetros, ficaria assim:
+- firstName=Clean: primeiro colocamos o nome do parâmetros, depois o sinal de atribuição e em seguida o valor.
+- Para colocar mais parâmetros, devemos inserir o & e repetir nome do parâmetro, sinal de atribuição "=" e o valor do parâmetro
+
+<h4>Header Params</h4>
+São enviados no cabeçalho da requisição, eles não podem ser enviados via browser, devemos utilizar um client(postman), nele podemos colocar algumas keys como tipo de arquivo(Accept), Content-Type, Authorizathion.
+
+
+![[Pasted image 20231106081056.png]]
+
+<h4>Parâmetros do body</h4>
+São usados para envio de informações completas, podendo ser enviado via JSON e entre vários outros formatos aceito pela API REST  .
+
+Exemplo utilizando JSON:
+![[Pasted image 20231106081226.png]]
+
