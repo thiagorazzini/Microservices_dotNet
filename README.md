@@ -167,4 +167,22 @@ Suporta parâmetros:
 - Via URL(PATH ou Query) -> De preferência passando para PATH
 - Via Header
 - Via Body 
+<h4>Outros verbos menos conhecidos</h4>
+<strong>Patch</strong>
 
+O verbo é utilizado para realizar updates parciais. Como por exemplo a alteração apenas de um campo em um recurso, invés de executar o POST com todo o seu conteúdo, gerando mais consumo de banda, usamos o PATCH para realizar a alteração do conteúdo sem consumir tanta banda da API.
+
+<strong>Contras</strong>
+Use com moderação pois pode ter colisões com múltiplas PATCH request, porque ele exige que o cliente tenha informações básicas do recurso, caso ao contrário podemos corromper o recurso.
+
+<strong>HEAD</strong>
+Serve para a mesma função do patch, porém o servidor retorna um response line e headers, mas não retorna um entity-body.
+
+<strong>Trace</strong>
+Usado como recuperador de conteúdo de uma requisição HTTP de volta podendo ser usado com o propósito de debug durante o processo de desenvolvimento.
+
+<strong>Options</strong>
+Serve para listar as operações HTTP suportadas pelo servidor. O Cliente pode especificar na URL o ponto que você quer ver para o verbo OPTIONS ou um * para refletir em todo o servidor.
+
+<strong>Connect</strong>
+Verbo usado para estabelecer uma conexão entre o servidor e o Client HTTP.
