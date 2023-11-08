@@ -201,4 +201,12 @@ Nível 2: Uso do verbo HTTP -> Já existe uma preocupação do uso correto dos v
 
 Nível 3: Uso de Hypermedia contros -> Acessar a listagem em um objeto que contém verbos HTTP dentro de objetos.
 
-Se a arquitetura REST não estiver orientada ao hipertexto, não poderá ser considerada uma APIRESTful por completo 
+Se a arquitetura REST não estiver orientada ao hipertexto, não poderá ser considerada uma APIRESTful por completo.
+
+<h4>HATEOS</h4>
+É a prática onde desenvolvemos hyperlinks dentro das APIs que permite realizar a nevageação entre os endpoints de forma dinâmica, visto que incluí links as respostas.Na prática,  a API retorna informações que o client irá precisar para realizar os proximos passos.
+
+
+Podemos ver que nesse exemplo abaixo, tivemos um retorno do recurso com links dos endpoinsts para executar  proxima ação se desejar.
+
+![[Pasted image 20231108074449.png]]
