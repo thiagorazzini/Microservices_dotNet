@@ -186,3 +186,19 @@ Serve para listar as operações HTTP suportadas pelo servidor. O Cliente pode e
 
 <strong>Connect</strong>
 Verbo usado para estabelecer uma conexão entre o servidor e o Client HTTP.
+
+<h4>Níveis de maturidade de Richardson</h4>
+Existe 4 níveis de maturidade para  classificar a maturidade do REST, sendo o RESTFull  o mais alto de maturidade. Sua API pode ser REST mas não ser RESTFull, porém todo RESTFull é REST, para que ser RESTFull a api deve atender os 4 níveis de maturidade da escala Richardson
+
+![[Pasted image 20231108073520.png]]
+
+
+nível 0: Pantano de XML -> Todas as ações da api esta atrelado em apenas 1 endpoint e a única coisa que separa para ele ser um REST é que ele utiliza o HTTP para trafegar o JSON ou XML.
+
+Nível 1: Separação de Recursos -> Temos um endpoint para cada ação desejada e está mais organizado, porém não tem uma preocupação de usar os verbos adequados para realizar as ações, somente GET e POST.
+
+Nível 2: Uso do verbo HTTP -> Já existe uma preocupação do uso correto dos verbos, ele pega tudo que há de bom no nível 1 e incrementa mais  detalhes.
+
+Nível 3: Uso de Hypermedia contros -> Acessar a listagem em um objeto que contém verbos HTTP dentro de objetos.
+
+Se a arquitetura REST não estiver orientada ao hipertexto, não poderá ser considerada uma APIRESTful por completo 
